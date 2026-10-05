@@ -1,0 +1,99 @@
+.home {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.homeeyebrow {
+  color: #4f46e5;
+  font-weight: bold;
+}
+
+.homeintro,
+.homemission {
+  max-width: 600px;
+  margin: 15px auto;
+}
+
+.homelinks a {
+  margin: 10px;
+  color: #4f46e5;
+  text-decoration: none;
+}
+.home img {
+  width: 200px;
+  height: 200px;
+}
+.services {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.services section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.projects {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.project {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.education {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.education section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.aboutme {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.aboutmecontent {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.aboutmelist {
+  line-height: 1.8;
+}
+.logo {
+  width: 350px;       /* Increase or decrease to desired size */
+  height: auto;        /* Maintains aspect ratio without distortion */
+  display: block;      /* Needed so margin auto works on image elements */
+  margin: 0 auto;      /* Centers horizontally */
+}
