@@ -1,246 +1,32 @@
-/* ==========================================================================
-   Global Reset & Base Layout
-   ========================================================================== */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  line-height: 1.6;
-  color: #1f2937;
-  background-color: #f9fafb;
-}
-
-section {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1.5rem;
+.home {
   text-align: center;
+  padding: 50px 20px;
 }
 
-h1 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-  color: #111827;
+.homeeyebrow {
+  color: #4f46e5;
+  font-weight: bold;
 }
 
-h2 {
-  font-size: 1.75rem;
-  font-weight: 700;
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-  color: #1f2937;
+.homeintro,
+.homemission {
+  max-width: 600px;
+  margin: 15px auto;
 }
 
-h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #2563eb;
-  margin-bottom: 1rem;
+.homelinks a {
+  margin: 10px;
+  color: #4f46e5;
+  text-decoration: none;
 }
-
-p {
-  margin-bottom: 1rem;
-  color: #4b5563;
+.home img {
+  width: 200px;
+  height: 200px;
 }
-
-/* ==========================================================================
-   Navbar Styling (Fixes navigation jamming & logo vertical sizing)
-   ========================================================================== */
-.navbar {
-  width: 100%;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-}
-
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo-image {
-  height: 40px;
+.navbar-brand, .logo img {
   width: auto;
-  max-width: 160px;
+  height: 155px;
+  max-height: 100%;
   object-fit: contain;
-  display: block;
-}
-
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: #4b5563;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.nav-link.active,
-.nav-link:hover {
-  color: #2563eb;
-}
-
-/* ==========================================================================
-   Hero & About Sections
-   ========================================================================== */
-.aboutmeeyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #2563eb;
-  margin-bottom: 0.5rem;
-}
-
-.aboutme__list {
-  margin: 1.5rem auto;
-  padding-left: 1.5rem;
-  text-align: left;
-  display: inline-block;
-}
-
-.aboutme__list li {
-  margin-bottom: 0.5rem;
-  color: #374151;
-}
-
-/* ==========================================================================
-   Skills / Tech Badges (Fixes concatenated text like PythonC#JavaScript)
-   ========================================================================== */
-.skills-container,
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-  margin: 1rem 0;
-}
-
-.skill-badge,
-.tag {
-  background-color: #eff6ff;
-  color: #1d4ed8;
-  font-size: 0.875rem;
-  font-weight: 500;
-  padding: 0.35rem 0.85rem;
-  border-radius: 9999px;
-  border: 1px solid #bfdbfe;
-}
-
-/* ==========================================================================
-   Project Cards Layout
-   ========================================================================== */
-.project-card,
-.education-card {
-  background-color: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  text-align: left;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}
-
-.project-card h3,
-.education-card h3 {
-  color: #111827;
-  margin-bottom: 0.5rem;
-}
-
-/* ==========================================================================
-   Contact Form Formatting (Fixes colliding input boxes)
-   ========================================================================== */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  max-width: 500px;
-  margin: 2rem auto;
-  text-align: left;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.form-group label {
-  font-weight: 500;
-  color: #374151;
-  font-size: 0.9rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #d1d5db;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-family: inherit;
-  transition: border-color 0.2s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-}
-
-/* ==========================================================================
-   Buttons & Links
-   ========================================================================== */
-.primary-button,
-button[type="submit"] {
-  display: inline-block;
-  background-color: #2563eb;
-  color: #ffffff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.primary-button:hover,
-button[type="submit"]:hover {
-  background-color: #1d4ed8;
-}
-
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-.footer {
-  margin-top: 4rem;
-  padding: 2rem 1rem;
-  background-color: #ffffff;
-  border-top: 1px solid #e5e7eb;
-  text-align: center;
-  color: #6b7280;
-  font-size: 0.875rem;
-}
-
-.footer h3 {
-  color: #374151;
-  font-size: 1.1rem;
-  margin-bottom: 0.25rem;
+  vertical-align: middle;
 }

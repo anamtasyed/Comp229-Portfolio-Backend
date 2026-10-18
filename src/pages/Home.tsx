@@ -13,7 +13,7 @@ function Home() {
                 and modern web technologies. 
                 </p>
                 <p className="mission">
-               <strong>My Mission</strong>
+               <strong>My Mission</strong>{" "}
                To build useful, intelligent and user-focused software solutions while continuously developing my technical and problem-solving skills.
                </p>                    
             <div className="hero-buttons">
@@ -26,7 +26,7 @@ function Home() {
                 <div className="hero-logo">
                 </div>
                 <h3>AI • Software • Full Stack Web Development</h3>
-                <p>Building technology with curosity, creativity and purpose.</p>
+                <p>Building technology with curiosity, creativity and purpose.</p>
             </div>
         </section>
     );

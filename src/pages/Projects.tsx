@@ -1,5 +1,3 @@
-import React from "react";
-
 interface Project {
   title: string;
   image: string;
@@ -12,7 +10,7 @@ interface Project {
 const projects: Project[] = [
   {
     title: "AI-Assisted Publishing Pipeline",
-    image: "/images/project1.jpg",
+    image: "",
     description:
       "An AI-assisted pipeline for organizing and transforming archived blog content into structured published works.",
     role: "AI Developer",
@@ -31,7 +29,7 @@ const projects: Project[] = [
   },
   {
     title: "ML-Based Firewall",
-    image: "/images/project2.jpg",
+    image: "",
     description:
       "A machine learning system designed to detect suspicious network traffic.",
     role: "ML Developer",
